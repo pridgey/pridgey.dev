@@ -1,13 +1,13 @@
 .container {
-  transform: perspective(9cm) rotateX(-15deg) rotateY(var(--zed));
-  width: 100px;
+  transform: perspective(9cm) rotateX(5deg) rotateY(var(--zed));
+  width: var(--sc);
   height: 100px;
   transform-style: preserve-3d;
 }
 
 .building_face {
   position: absolute;
-  width: 100px;
+  width: var(--sc);
   height: 100px;
   line-height: 100px;
   font-size: 100px;
@@ -15,18 +15,36 @@
   background-color: salmon;
 }
 
-.front {
-  transform: translate3d(0, 0, 50px);
+.roof {
+  border-bottom: 50px solid #555;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: var(--sc);
+  background-color: transparent;
+  transform-origin: bottom center;
 }
 
-.top {
-  transform: rotateX(90deg) translate3d(0, 0, 50px);
+.front {
+  transform: translate3d(0, 0, var(--sct));
+}
+
+.front_roof {
+  transform: translate3d(0, -100%, var(--sct)) rotateX(30deg);
+}
+
+.left_roof {
+  transform: rotateY(-90deg) translate3d(0, -100%, var(--sct)) rotateX(30deg);
+}
+
+.right_roof {
+  transform: rotateY(90deg) translate3d(0, -100%, var(--sct)) rotateX(30deg);
 }
 
 .left {
-  transform: rotateY(-90deg) translate3d(0, 0, 50px);
+  transform: rotateY(-90deg) translate3d(0, 0, var(--sct));
 }
 
 .right {
-  transform: rotateY(90deg) translate3d(0, 0, 50px);
+  transform: rotateY(90deg) translate3d(0, 0, var(--sct));
 }
