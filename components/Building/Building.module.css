@@ -1,18 +1,29 @@
 .container {
-  transform: perspective(9cm) rotateX(5deg) rotateY(var(--zed));
+  position: absolute;
+  left: var(--left);
+  bottom: var(--top);
+  transform: perspective(500in) rotateX(0deg) rotateY(var(--zed));
   width: var(--sc);
-  height: 100px;
+  height: var(--height);
   transform-style: preserve-3d;
 }
 
 .building_face {
   position: absolute;
+  display: flex;
+  padding: 10%;
+  flex-wrap: wrap;
+  gap: 10%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   width: var(--sc);
-  height: 100px;
-  line-height: 100px;
-  font-size: 100px;
-  text-align: center;
-  background-color: salmon;
+  height: var(--height);
+  line-height: var(--height);
+  background: linear-gradient(var(--color), var(--color-two));
+  border-top: 5px solid var(--color-dark);
+  background-color: #a63131;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23fefeff' fill-opacity='0.21'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .roof {
@@ -23,10 +34,20 @@
   width: var(--sc);
   background-color: transparent;
   transform-origin: bottom center;
+  border-top: 0px;
+  padding: 0px;
 }
 
 .front {
   transform: translate3d(0, 0, var(--sct));
+}
+
+.window {
+  width: 15%;
+  aspect-ratio: 0.85;
+  background-color: rgb(29, 29, 29);
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
 }
 
 .front_roof {
@@ -34,17 +55,27 @@
 }
 
 .left_roof {
-  transform: rotateY(-90deg) translate3d(0, -100%, var(--sct)) rotateX(30deg);
+  transform: rotateY(-90deg) translate3d(0, -100%, var(--side-offset))
+    rotateX(30deg);
+  border-bottom: 50px solid rgb(61, 61, 61);
+  width: var(--side);
 }
 
 .right_roof {
-  transform: rotateY(90deg) translate3d(0, -100%, var(--sct)) rotateX(30deg);
+  transform: rotateY(90deg) translate3d(0, -100%, var(--side-offset))
+    rotateX(30deg);
+  border-bottom: 50px solid rgb(61, 61, 61);
+  width: var(--side);
 }
 
 .left {
-  transform: rotateY(-90deg) translate3d(0, 0, var(--sct));
+  transform: rotateY(-90deg) translate3d(0, 0, var(--side-offset));
+  background: var(--color-dark);
+  width: var(--side);
 }
 
 .right {
-  transform: rotateY(90deg) translate3d(0, 0, var(--sct));
+  transform: rotateY(90deg) translate3d(0, 0, var(--side-offset));
+  background: var(--color-dark);
+  width: var(--side);
 }
