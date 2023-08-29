@@ -1,0 +1,150 @@
+/* Lightning flash */
+.lightning {
+  background-color: var(--lightning-yellow);
+  border-radius: 100%;
+  box-shadow: 0px 0px var(--shadow-length) var(--shadow-length)
+    var(--lightning-yellow);
+  position: absolute;
+  opacity: 0;
+}
+
+.lightning1 {
+  animation-name: lightning;
+  animation-duration: var(--lightning1-duration);
+  animation-delay: var(--lightning2-delay);
+  animation-iteration-count: infinite;
+}
+
+.lightning2 {
+  animation: lightning2;
+  animation-duration: var(--lightning2-duration);
+  animation-delay: var(--lightning2-delay);
+  animation-iteration-count: infinite;
+}
+
+@keyframes lightning {
+  0% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 0.5;
+  }
+  3% {
+    opacity: 0.75;
+  }
+  4% {
+    opacity: 0.5;
+  }
+  5% {
+    opacity: 1;
+  }
+  6% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+  /* 0% {
+    background-color: var(--cloud-dark);
+    box-shadow: 0px 0px 0px 0px var(--lightning-yellow);
+  }
+
+  1% {
+    background-color: var(--cloud-dark);
+    box-shadow: 0px 0px 100px 100px var(--lightning-yellow);
+  }
+
+  3% {
+    background-color: var(--cloud-blue);
+    box-shadow: 0px 0px 0px 0px var(--lightning-yellow);
+  }
+
+  5% {
+    background-color: var(--cloud-blue);
+    filter: none;
+  }
+
+  6% {
+    background-color: var(--cloud-dark);
+    box-shadow: 0px 0px 150px 150px var(--lightning-yellow);
+  }
+
+  7% {
+    background-color: var(--cloud-blue);
+    box-shadow: 0px 0px 0px 0px var(--lightning-yellow);
+  }
+
+  8% {
+    background-color: var(--cloud-blue);
+    filter: none;
+  }
+
+  100% {
+    background-color: var(--cloud-blue);
+    filter: none;
+  } */
+}
+
+@keyframes lightning2 {
+  0% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 0.5;
+  }
+  3% {
+    opacity: 0.75;
+  }
+  4% {
+    opacity: 0.5;
+  }
+  5% {
+    opacity: 1;
+  }
+  6% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+  /* 0% {
+    background-color: var(--cloud-dark);
+    box-shadow: 0px 0px 0px 0px var(--lightning-yellow);
+  }
+
+  1% {
+    background-color: var(--cloud-dark);
+    box-shadow: 0px 0px 150px 150px var(--lightning-yellow);
+  }
+
+  3% {
+    background-color: var(--cloud-blue);
+    box-shadow: 0px 0px 0px 0px var(--lightning-yellow);
+  }
+
+  4% {
+    background-color: var(--cloud-dark);
+    box-shadow: 0px 0px 150px 150px var(--lightning-yellow);
+  }
+
+  5% {
+    background-color: var(--cloud-blue);
+    box-shadow: 0px 0px 0px 0px var(--lightning-yellow);
+  }
+
+  6% {
+    background-color: var(--cloud-blue);
+    filter: none;
+  }
+
+  100% {
+    background-color: var(--cloud-blue);
+    filter: none;
+  } */
+}

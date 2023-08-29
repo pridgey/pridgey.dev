@@ -1,0 +1,19 @@
+/* Individual Cloud Class */
+.cloud {
+  height: 200px;
+  position: absolute;
+  width: 350px;
+}
+
+/* Layout of the component */
+.layout {
+  background-color: var(--cloud-blue);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: fixed;
+  left: -50px;
+  right: -50px;
+  top: -50px;
+  bottom: -50px;
+}
