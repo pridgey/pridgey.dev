@@ -1,0 +1,17 @@
+/* Font declarations */
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+/* CSS Variable definitions */
+:root {
+  --lightning-yellow: rgba(247, 247, 37, 0.541);
+  --cloud: #000102;
+}
+
+/* Solid-Start styling below */
+body {
+  font-family: Montserrat, Gordita, Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+}

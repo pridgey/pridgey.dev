@@ -1,10 +1,8 @@
-import styles from "./StormBackground.module.css";
-import { StormCloud } from "../StormCloud";
-import { For } from "solid-js";
-import { variateNumber } from "../../utilities/VariateNumber";
-import { shuffleArray } from "../../utilities/ShuffleArray";
+import { random } from "~/utilities/Random";
+import { shuffleArray } from "~/utilities/ShuffleArray";
 import { LightningSource } from "../LightningSource";
-import { random } from "../../utilities/Random";
+import { StormCloud } from "../StormCloud";
+import styles from "./StormBackground.module.css";
 
 const columns = 20;
 const rows = 20;
