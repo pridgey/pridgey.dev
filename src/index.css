@@ -1,7 +1,6 @@
 :root {
-  --lightning-yellow: rgb(255, 255, 0);
-  --cloud-blue: #000102;
-  --cloud-dark: #011b24;
+  --lightning-yellow: rgba(247, 247, 37, 0.541);
+  --cloud: #000102;
 }
 
 body {

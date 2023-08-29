@@ -1,5 +1,5 @@
 import styles from "./StormBackground.module.css";
-import { StormCloudSVG } from "../StormCloudSVG";
+import { StormCloud } from "../StormCloud";
 import { For } from "solid-js";
 import { variateNumber } from "../../utilities/VariateNumber";
 import { shuffleArray } from "../../utilities/ShuffleArray";
@@ -27,29 +27,9 @@ export const StormBackground = () => {
 
   return (
     <div class={styles.layout}>
-      <For each={new Array(6)}>
-        {(_, i) => (
-          <LightningSource
-            style={{
-              left: `${allClouds[i()]?.left}%`,
-              top: `${allClouds[i()]?.top}%`,
-            }}
-          />
-        )}
-      </For>
-      <For each={allClouds}>
-        {(cloudData, i) => (
-          <StormCloudSVG
-            class={styles.cloud}
-            style={{
-              height: `${cloudData.height}px`,
-              left: `${cloudData.left}%`,
-              top: `${cloudData.top}%`,
-              width: `${cloudData.width}px`,
-            }}
-          />
-        )}
-      </For>
+      <StormCloud style={{ "box-shadow": "0px 800px 40px 0px var(--cloud)" }} />
+      <LightningSource />
+      <StormCloud />
     </div>
   );
 };
