@@ -9,11 +9,13 @@ type LightningSourceProps = {
 
 export const LightningSource = (props: LightningSourceProps) => {
   const calculateValues = () => {
-    const lightningDuration = Math.round(random(15, 25));
+    const lightningDuration = Math.round(random(0.5, 1.5));
     const lightningRotation = random(-4, 4);
     const lightningTop = random(-50, 0);
     const lightningWidth = random(20, 110);
     const lightningLeft = random(-10, 110);
+
+    const newAnimationDelay = random(0, 7);
 
     const lightningLength = Math.round(random(200, 250));
 
@@ -51,7 +53,19 @@ export const LightningSource = (props: LightningSourceProps) => {
       );
     }
 
-    setTimeout(calculateValues, lightningDuration * 1000);
+    // Trigger reflow to reset the animation
+    const lightningElements = document.getElementsByClassName(styles.lightning);
+    const lightningElement: HTMLElement = lightningElements?.[0] as HTMLElement;
+
+    // Setting inline style, trigger a reflow, and unsetting inline
+    lightningElement.style.animation = "none";
+    lightningElement.getBoundingClientRect();
+    lightningElement.style.animation = "";
+
+    setTimeout(
+      calculateValues,
+      lightningDuration * 1000 + newAnimationDelay * 1000
+    );
   };
 
   onMount(() => {

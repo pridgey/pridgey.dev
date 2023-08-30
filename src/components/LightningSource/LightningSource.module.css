@@ -13,29 +13,29 @@
   transform: var(--lightning-rotation);
   animation-name: lightning;
   animation-duration: var(--lightning-duration);
-  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
 }
 
 @keyframes lightning {
   0% {
     opacity: 1;
   }
-  1% {
+  20% {
     opacity: 0;
   }
-  2% {
+  50% {
     opacity: 0.5;
   }
-  3% {
+  60% {
     opacity: 0.75;
   }
-  4% {
+  70% {
     opacity: 0.5;
   }
-  5% {
+  80% {
     opacity: 1;
   }
-  6% {
+  90% {
     opacity: 0;
   }
   100% {
