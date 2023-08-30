@@ -1,5 +1,5 @@
 .background {
-  background-color: rgb(12, 12, 14);
+  background-color: var(--color-blue);
   bottom: 0px;
   left: 0px;
   position: fixed;
@@ -9,6 +9,7 @@
 
 .container {
   bottom: 0px;
+  box-shadow: var(--shadow);
   left: 0px;
   position: fixed;
   right: 0px;

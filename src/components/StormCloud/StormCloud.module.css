@@ -1,7 +1,7 @@
 .cloud {
   background: transparent;
   filter: var(--cloud-filter-id);
-  box-shadow: 0px 400px 40px 0px var(--cloud);
+  box-shadow: 0px 400px 40px 0px var(--color-background);
   position: absolute;
   top: -600px;
   left: -10vw;

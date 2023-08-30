@@ -1,6 +1,6 @@
 /* Layout of the component */
 .layout {
-  background-color: var(--cloud);
+  background-color: var(--color-background);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

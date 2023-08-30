@@ -1,13 +1,10 @@
 export const ColorDict = {
   Background: "var(--color-background)",
-  BackgroundFull: "var(--color-fullbackground)",
   Black: "var(--color-black)",
-  Foreground: "var(--color-foreground)",
-  ForegroundFull: "var(--color-fullforeground)",
+  Blue: "var(--color-blue)",
   Gray: "var(--color-gray)",
-  Primary: "var(--color-primary)",
+  Lightning: "var(--color-lightning)",
   Red: "var(--color-red)",
-  Secondary: "var(--color-secondary)",
   White: "var(--color-white)",
 };
 

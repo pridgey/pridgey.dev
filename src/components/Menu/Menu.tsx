@@ -22,7 +22,9 @@ export const Menu = (props: MenuProps) => {
       >
         {props.children}
         <Button
+          BackgroundColor="Background"
           Class={styles.menuButton}
+          TextColor="White"
           Type="button"
           OnClick={() => setOpen(!isOpen())}
         >

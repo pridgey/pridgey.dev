@@ -1,9 +1,9 @@
 /* Lightning flash */
 .lightning {
-  background-color: var(--lightning-yellow);
+  background-color: var(--color-lightning);
   border-radius: 100%;
   box-shadow: 0px 0px var(--shadow-length) var(--shadow-length)
-    var(--lightning-yellow);
+    var(--color-lightning);
   position: absolute;
   filter: var(--cloud-filter-id);
   width: var(--lightning-width);
