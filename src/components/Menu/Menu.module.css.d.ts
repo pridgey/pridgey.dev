@@ -3,6 +3,8 @@ declare const styles: {
   readonly "container": string;
   readonly "container-open": string;
   readonly "menuButton": string;
+  readonly "nav": string;
+  readonly "nav_open": string;
 };
 export = styles;
 

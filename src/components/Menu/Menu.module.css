@@ -33,3 +33,20 @@
   left: 4rem;
   width: 3rem;
 }
+
+.nav {
+  background-color: var(--color-white);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  position: absolute;
+  height: 80vh;
+  left: -20vw;
+  top: 10vh;
+  transition: all 1s;
+  width: 20vw;
+}
+
+.nav_open {
+  left: 0px;
+  transition: all 1s;
+}

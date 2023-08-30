@@ -1,0 +1,41 @@
+.container {
+  box-sizing: border-box;
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+
+.bar {
+  background-color: var(--color-white);
+  border-radius: 2px;
+  height: 4px;
+  position: absolute;
+  transition: all 1s;
+  width: 100%;
+
+  &:nth-of-type(1) {
+    top: 7px;
+  }
+
+  &:nth-of-type(2) {
+    top: 18px;
+  }
+
+  &:nth-of-type(3) {
+    top: 29px;
+  }
+}
+
+.top_open {
+  transform: translateY(11px) rotate(45deg);
+  transition: all 1s;
+}
+
+.middle_open {
+  transform: rotate(360deg) scale(0);
+}
+
+.bottom_open {
+  transform: translateY(-11px) rotate(-45deg);
+  transition: all 1s;
+}

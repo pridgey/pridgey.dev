@@ -3,6 +3,7 @@ import type { JSX } from "solid-js";
 import { createSignal } from "solid-js";
 import styles from "./Menu.module.css";
 import { Button } from "../Button";
+import { MenuIcon } from "../MenuIcon";
 
 type MenuProps = {
   children: JSX.Element;
@@ -13,7 +14,14 @@ export const Menu = (props: MenuProps) => {
 
   return (
     <>
-      <div class={styles.background}></div>
+      <div class={styles.background}>
+        <nav
+          classList={{
+            [styles.nav]: true,
+            [styles.nav_open]: isOpen(),
+          }}
+        ></nav>
+      </div>
       <div
         classList={{
           [styles.container]: true,
@@ -28,7 +36,7 @@ export const Menu = (props: MenuProps) => {
           Type="button"
           OnClick={() => setOpen(!isOpen())}
         >
-          <CgMenu />
+          <MenuIcon MenuOpen={isOpen()} />
         </Button>
       </div>
     </>
