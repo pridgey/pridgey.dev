@@ -25,7 +25,6 @@ export const StormBackground = () => {
 
   return (
     <div class={styles.layout}>
-      <StormCloud style={{ "box-shadow": "0px 800px 40px 0px var(--cloud)" }} />
       <LightningSource />
       <StormCloud />
     </div>

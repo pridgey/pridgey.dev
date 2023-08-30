@@ -3288,6 +3288,11 @@ sirv@^2.0.3:
     mrmime "^1.0.0"
     totalist "^3.0.0"
 
+solid-icons@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/solid-icons/-/solid-icons-1.0.11.tgz#2057b0c3f5c2d91f8bee1a23640b5a5acfb9ccba"
+  integrity sha512-shEL5Otrl73LPZukpanJKi6ISnQhpIvhqqAb8haKyCGrixHOYC6yGfNkSE7jpkKSikZ0rGtSMRiFETRrec2Uzw==
+
 solid-js@^1.7.11:
   version "1.7.11"
   resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.7.11.tgz#c37706382bcfd563459810434b1382b550c27867"
