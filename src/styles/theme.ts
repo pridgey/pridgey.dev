@@ -8,17 +8,14 @@ export const ColorDict = {
   White: "var(--color-white)",
 };
 
+// Rem based on initial font-size 6px
 export const FontSizeDict = {
-  "1-small": 0.618,
-  "2-normal": 1,
-  "3-paragraph": 2,
-  "3-medium": 2,
-  "4-medium-large": 2.618,
-  "5-large": 4.236,
-  "5-header": 4.236,
-  "6-extra-large": 6.854,
-  "6-title": 6.854,
-  "7-massive": 11.089,
+  "1-detail": 2.1666666667,
+  "2-subtext": 2.3333333333,
+  "3-paragraph": 3.3333333333,
+  "4-subtitle": 3.6666666667,
+  "5-header": 4,
+  "6-title": 7,
 };
 
 export const FontWeightDict = {
@@ -38,5 +35,5 @@ export const getFontSize = (key: keyof typeof FontSizeDict) => {
   if (Object.hasOwn(FontSizeDict, key)) {
     return `${FontSizeDict[key]}rem`;
   }
-  return `${FontSizeDict["2-normal"]}rem`;
+  return `${FontSizeDict["3-paragraph"]}rem`;
 };
